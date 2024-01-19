@@ -1,5 +1,4 @@
 # Import Libraries
-import json
 from flask import Flask, jsonify
 from data import transactions_list
 
@@ -16,6 +15,8 @@ def get_transactions():
     return jsonify(response), 200
 
 
+
+
 # Returns list of 10 transactions with highest fees
 @app.route('/get_ten_highest_fees', methods=['GET'])
 def get_ten_highest_fees():
@@ -23,11 +24,15 @@ def get_ten_highest_fees():
     return jsonify(response), 200
 
 
+
+
 # Returns list of 10 transactions with lowest fees
 @app.route('/get_ten_lowest_fees', methods=['GET'])
 def get_ten_lowest_fees():
     response = {} # placeholder
     return jsonify(response), 200
+
+
     
 
 
